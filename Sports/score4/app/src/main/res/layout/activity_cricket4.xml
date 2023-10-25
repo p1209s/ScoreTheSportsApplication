@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sports1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/linearLayout">
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/max_players"
+                android:id="@+id/max_players"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:gravity="center|start"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/max_over"
+                android:id="@+id/max_over"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:gravity="center|end"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/Team1_name"
+            android:id="@+id/Team1_name"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="fill_horizontal|center"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/Team1_score"
+                android:id="@+id/Team1_score"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/Team1_ball"
+                android:id="@+id/Team1_ball"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <Button
+            style="@style/buttonStyle6"
+            android:text="@string/Team1_btn"
+            android:id="@+id/Team1_btn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/Team2_name"
+            android:id="@+id/Team2_name"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="fill_horizontal|center"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/Team2_score"
+                android:id="@+id/Team2_score"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/Team2_ball"
+                android:id="@+id/Team2_ball"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <Button
+            style="@style/buttonStyle6"
+            android:text="@string/Team2_btn"
+            android:id="@+id/Team2_btn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp">
+
+
+        <Button
+            android:id="@+id/new_match"
+            style="@style/buttonStyle6"
+            android:layout_marginEnd="50dp"
+            android:padding="12dp"
+            android:text="@string/new_match" />
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="60dp" />
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="60dp" />
+
+    </LinearLayout>
+</RelativeLayout>

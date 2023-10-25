@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="10dp"
+    tools:ignore="ScrollViewCount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".admin.AdminFantasy">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="#Team Name:"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/teamName"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:hint="Enter Team Name (India Vs England)"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="#Pitch Report:"/>
+
+        <EditText
+            android:id="@+id/pitchReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="#Probable 11:"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/teamA_xi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Team A"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/teamB_xi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Team B"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="# Safe Captain and VC option:"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/safe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="# Risky Captain and VC option:"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/risky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="# Smart Pick:"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/smartPick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="# Head To Head Team:"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="# Grand League Team:"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/submit"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:onClick="submit"/>
+        <Button
+            android:id="@+id/show_data"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Data"/>
+
+    </LinearLayout>
+</ScrollView>

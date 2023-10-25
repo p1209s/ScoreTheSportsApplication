@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/standingsText"
+            android:id="@+id/standingsTextView"
+            android:layout_gravity="center_horizontal"
+            android:textSize="28sp"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="#E48700"
+            tools:ignore="SmallSp" />
+
+
+        <ListView
+            tools:listitem="@android:layout/simple_list_item_1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/standingsListView"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffff"
+            android:layout_margin="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp">
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:text="@string/view_rounds"
+            android:layout_marginTop="10dp"
+            android:id="@+id/viewRoundsButtonTextView"
+            android:onClick="viewRoundsOnClick"
+            style="@style/Random1"/>
+
+        <Button
+            android:text="@string/delete_tournament"
+            android:id="@+id/deleteTournamentButton"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:onClick="deleteTournamentOnClick"
+            style="@style/Random1"/>
+    </LinearLayout>
+
+</RelativeLayout>

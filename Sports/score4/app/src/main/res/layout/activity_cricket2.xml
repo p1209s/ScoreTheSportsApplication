@@ -1,0 +1,261 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sports1"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Team1_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/Team1_name"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="30sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/runs"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/score_overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/score_overview"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/over"
+                android:textSize="20sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/ball_overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ball_overview"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/this_over"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/this_over"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="14sp"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/extra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginStart="70dp"
+                android:text="@string/extra"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="180dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/runs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="-30dp"
+                android:layout_marginEnd="70dp"
+                android:text="@string/runs_1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp">
+
+            <Button
+                android:id="@+id/byes"
+                style="@style/buttonStyle6"
+                android:text="@string/byes" />
+
+            <Button
+                android:id="@+id/wides"
+                style="@style/buttonStyle6"
+                android:text="@string/wides" />
+
+            <ImageButton
+                android:id="@+id/zero_run"
+                style="@style/Imagebutton"
+                android:layout_marginStart="10dp"
+                android:allowUndo="true"
+                android:background="@drawable/zero"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/one_run"
+                style="@style/Imagebutton"
+                android:allowUndo="false"
+                android:background="@drawable/one"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/two_run"
+                style="@style/Imagebutton"
+                android:background="@drawable/two"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp">
+
+            <Button
+                android:id="@+id/no_ball"
+                style="@style/buttonStyle6"
+                android:text="@string/no_ball" />
+
+            <Button
+                android:id="@+id/leg_byes"
+                style="@style/buttonStyle6"
+                android:text="@string/leg_byes" />
+
+            <ImageButton
+                android:id="@+id/three_run"
+                style="@style/Imagebutton"
+                android:layout_marginStart="10dp"
+                android:allowUndo="true"
+                android:background="@drawable/three"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/four_run"
+                style="@style/Imagebutton"
+                android:allowUndo="false"
+                android:background="@drawable/four"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/six_run"
+                style="@style/Imagebutton"
+                android:background="@drawable/six"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp">
+
+            <Button
+                android:id="@+id/wicket"
+                style="@style/buttonStyle6"
+                android:layout_width="160dp"
+                android:text="@string/wicket" />
+
+            <Button
+                android:id="@+id/undo"
+                style="@style/buttonStyle6"
+                android:layout_width="150dp"
+                android:layout_marginStart="15dp"
+                android:text="@string/undo" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="40dp"
+        tools:ignore="ObsoleteLayoutParam,RtlHardcoded">
+
+        <Button
+            android:id="@+id/stats"
+            style="@style/buttonStyle6"
+            android:text="@string/stats" />
+    </LinearLayout>
+
+</LinearLayout>

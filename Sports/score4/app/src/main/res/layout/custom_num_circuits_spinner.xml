@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/spinnerNumberTextView"
+        android:singleLine="true"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:ellipsize="marquee"
+        android:text="@string/_2"
+        android:textSize="25sp"
+        android:gravity="center_vertical|center_horizontal" />
+
+</LinearLayout>

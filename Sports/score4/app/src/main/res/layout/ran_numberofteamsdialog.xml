@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_number_of_teams"
+        android:textColor="@color/blue"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/etNumberOfTeams"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/number_of_teams"
+        android:inputType="number"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/_2"
+        tools:ignore="Autofill" />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNumberOfTeams"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bCancelRandomize"
+            style="@style/Random"
+            android:text="@string/cancel"/>
+
+        <Button
+            android:id="@+id/bGoRandomize"
+            style="@style/Random"
+            android:text="@string/go"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loadTournamentText"
+            android:id="@+id/loadTournamentTextView"
+            android:layout_gravity="center_horizontal"
+            android:textSize="28sp"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E48700" />
+
+        <ListView
+            tools:listitem="@android:layout/simple_list_item_1"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:id="@+id/tournamentsListView"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffff"
+            android:layout_margin="0dp" />
+
+        <Button
+            android:text="@string/deleteText"
+            android:id="@+id/deleteAndDoneTournamentButton"
+            android:onClick="deleteAndDoneTournamentOnClick"
+            style="@style/Random"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+</RelativeLayout>

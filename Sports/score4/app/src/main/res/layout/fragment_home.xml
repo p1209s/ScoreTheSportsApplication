@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            tools:ignore="UselessParent">
+
+            <ImageButton
+                android:id="@+id/button1"
+                android:text="@string/cricket"
+                android:background="@drawable/cricket"
+                style="@style/homepagebtn"
+                tools:ignore="ContentDescription" />
+            <ImageButton
+                android:id="@+id/button2"
+                android:text="@string/football"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/football"
+                android:textAlignment="center"
+                style="@style/homepagebtn"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cricket"
+                android:textSize="25sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:text="Football"
+                android:textSize="25sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+            <ImageButton
+                android:id="@+id/button4"
+                android:text="@string/volleyball"
+                android:background="@drawable/volleyball"
+                style="@style/homepagebtn"
+                tools:ignore="ContentDescription" />
+
+            <ImageButton
+                android:id="@+id/button5"
+                android:text="@string/kabaddi"
+                android:background="@drawable/kabaddi"
+                android:layout_marginStart="10dp"
+                style="@style/homepagebtn"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volleyball"
+                android:textSize="25sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:text="Kabaddi"
+                android:textSize="25sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

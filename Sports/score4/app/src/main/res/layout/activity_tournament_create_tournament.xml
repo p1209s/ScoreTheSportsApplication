@@ -1,0 +1,200 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:weightSum="1"
+        android:background="#ffffff">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tournamentNameEditText"
+            android:textSize="26sp"
+            android:hint="@string/tournamentNameText"
+            android:maxLength="28"
+            android:gravity="bottom|center_horizontal"
+            style="@style/EditTextHoloColors"
+            tools:ignore="Autofill"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/formatText"
+            android:id="@+id/formatTextView"
+            android:textSize="26sp"
+            android:gravity="bottom|center_horizontal"
+            android:singleLine="false" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="#E48700"
+            tools:ignore="SmallSp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/formatTypeRadioGroup"
+                tools:ignore="NestedWeights">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/roundRobinText"
+                    android:id="@+id/roundRobinRadioButton"
+                    android:checked="true"
+                    android:textSize="26sp"
+                    android:buttonTint="#E48700"
+                    android:clickable="true"
+                    android:contextClickable="false"
+                    android:onClick="roundRobinOnClick"
+                    android:focusable="true" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/singleEliminationText"
+                    android:id="@+id/knockoutRadioButton"
+                    android:checked="false"
+                    android:textSize="26sp"
+                    android:buttonTint="#E48700"
+                    android:onClick="knockoutRobinOnClick" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/combinationText"
+                    android:id="@+id/combinationRadioButton"
+                    android:checked="false"
+                    android:textSize="26sp"
+                    android:buttonTint="#E48700"
+                    android:onClick="combinationRobinOnClick" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gamesPerTeamText"
+                    android:id="@+id/numRoundsTextView"
+                    android:textSize="26sp"
+                    android:layout_marginStart="10sp"
+                    android:gravity="center_vertical" />
+
+                <Space
+                    android:layout_width="10sp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0" />
+
+                <Spinner
+                    android:layout_width="100sp"
+                    android:layout_height="40sp"
+                    android:id="@+id/numCircuitsSpinner"
+                    android:gravity="right"
+                    android:layout_gravity="center_vertical"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/teamsText"
+                android:id="@+id/teamsCreateTournamentTextView"
+                android:textSize="26sp"
+                android:gravity="left|bottom"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                style="@style/Random"
+                android:text="@string/deleteText"
+                android:id="@+id/deleteAndDoneTeamButton"
+                android:onClick="deleteAndDoneTeamOnClick" />
+
+            <Button
+                style="@style/Random"
+                android:text="@string/addText"
+                android:id="@+id/addTeamButton"
+                android:onClick="addTeamTournamentOnClick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="#E48700"
+            tools:ignore="SmallSp">
+        </LinearLayout>
+
+        <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:id="@+id/teamsListView"
+                tools:listitem="@android:layout/simple_expandable_list_item_1"
+                android:textSize="10sp"
+                android:layout_weight="0.8"
+                tools:ignore="SmallSp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:text="@string/startTournamentText"
+                android:id="@+id/startTournamentButton"
+                style="@style/Random"
+                android:onClick="startOnClick"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-100dp">
+
+            <Button
+                android:text="@string/deleteText"
+                android:id="@+id/deleteTournamentButton"
+                android:onClick="deleteOnClick"
+                tools:ignore="NestedWeights"
+                style="@style/Random"/>
+
+            <Button
+                android:text="@string/saveText"
+                android:id="@+id/saveTournamentButton"
+                android:onClick="saveOnClick"
+                style="@style/Random"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

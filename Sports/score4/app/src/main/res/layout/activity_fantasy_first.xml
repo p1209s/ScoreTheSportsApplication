@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    tools:ignore="ScrollViewCount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".First"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"
+        android:layout_marginEnd="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="IND VS ENG 1ST ODI"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Pitch: Pitch is better suited for batting and expected high score. Pitch is best suited for fast bowler."/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Probable 11" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="India playing 11 for 1st ODI: Rohit Sharma, Shikhar Dhawan, Virat Kohli(c), Shreyas Iyer, KL Rahul(wk), Hardik Pandya, Krunal Pandya, Shardul Thakur, Bhuvneshwar Kumar, Kuldeep Yadav, Prasidh Krishna." />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="England playing 11 for 1st ODI: Jason Roy, Jonny Bairstow, Eoin Morgan(c), Jos Buttler(wk), Ben Stokes, Sam Billings, Moeen Ali, Sam Curran, Tom Curran, Adil Rashid, Mark Wood." />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cap and VC option:" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Safe Option: Rohit Sharma, Virat Kohli, Jonny Bairstow, Ben Stokes." />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Risky Captain: Shikhar Dhawan, Jason Roy,KL Rahul,Jos Buttler " />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Smart Pick:Prasidh Krishna, S Curran" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small League and H2H Team" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="600dp"
+            android:background="@drawable/first_h2h"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grand League Team:" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="600dp"
+            android:background="@drawable/first_gl"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+</ScrollView>

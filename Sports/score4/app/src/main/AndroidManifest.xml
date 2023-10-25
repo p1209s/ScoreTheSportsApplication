@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.score">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activities.CreateTournamentActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".activities.EditTeamActivity"
+            android:screenOrientation="nosensor"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".activities.RoundActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activities.MatchViewActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activities.StandingsActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activities.LoadTournamentActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activities.MatchesActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".activities.Schedule"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".MainActivity1"
+            android:theme="@style/Theme.Design.NoActionBar"
+            tools:ignore="DuplicateActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".football.Football3"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".football.Football2"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".football.Football1"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".volleyball.Volleyball3"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".volleyball.Volleyball2"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".volleyball.Volleyball1"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".kabaddi.Kabaddi3"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".kabaddi.Kabaddi2"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".kabaddi.Kabaddi1"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".cricket.Cricket1"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".cricket.Cricket2"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".cricket.Cricket3"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".cricket.Cricket4"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Random.Ran_TeamRandomizer"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Random.Ran_Randomize"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Random.Ran_DeleteName"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Random.Ran_LoadPreset"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Random.Ran_DeletePreset"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Random.Ran_ViewPreset"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Fantasy"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".FantasyFirst"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".FantasySecond"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".FantasyThird"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Toss"
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".admin.Admin"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".livescore.liveScore"
+            android:label="Live Score"
+            android:screenOrientation="nosensor"/>
+        <activity
+            android:name=".livescore.MatchDetailActivity"
+            android:label="@string/new_label"
+            android:screenOrientation="nosensor"/>
+    </application>
+
+</manifest>

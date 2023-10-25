@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sports1"
+    tools:ignore="ScrollViewCount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_round">
+
+            <Chronometer
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chronometer"
+                android:textSize="40sp"
+                android:textColor="@android:color/white"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bt_start"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_play"
+                    android:onClick="start_chronometer"
+                    tools:ignore="ContentDescription" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_pause"
+                    android:id="@+id/bt_stop"
+                    android:onClick="pause_chronometer"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvteam_a"
+                style="@style/textViewStyle"
+                android:hint="@string/team_a" />
+
+            <TextView
+                style="@style/textViewStyle"
+                android:padding="4dp"
+                android:text="@string/vs"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tvteam_b"
+                style="@style/textViewStyle"
+                android:hint="@string/team_b" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/view"
+                style="@style/textViewStyle1"
+                android:layout_marginEnd="5dp" />
+            <TextView
+                android:id="@+id/toss"
+                style="@style/textViewStyle1"
+                android:text="@string/elected_to" />
+            <TextView
+                android:id="@+id/chosen"
+                android:layout_marginStart="5dp"
+                style="@style/textViewStyle1" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <Button
+                style="@style/buttonStyle4"
+                android:onClick="ScoreteamA"
+                android:text="@string/plus"/>
+            <TextView
+                android:id="@+id/ScA"
+                style="@style/scoreViewStyle" />
+            <Button
+                style="@style/buttonStyle4"
+                android:onClick="Scoreteama" />
+
+            <Button
+                style="@style/buttonStyle4"
+                android:onClick="ScoreteamB"
+                android:layout_marginStart="15dp"
+                android:text="@string/plus"/>
+            <TextView
+                android:id="@+id/ScB"
+                style="@style/scoreViewStyle" />
+            <Button
+                style="@style/buttonStyle4"
+                android:onClick="Scoreteamb" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <Button
+                style="@style/buttonStyle2"
+                android:onClick="substitutiona" />
+            <TextView
+                android:id="@+id/ScSub"
+                style="@style/cardScoreViewStyle" />
+
+            <TextView style="@style/textViewStyle2"
+                android:text="@string/substitution"/>
+
+            <Button
+                style="@style/buttonStyle2"
+                android:onClick="substitutionb" />
+            <TextView
+                android:id="@+id/ScSub1"
+                style="@style/cardScoreViewStyle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <Button
+                style="@style/buttonStyle2"
+                android:onClick="Shots"/>
+            <TextView
+                android:id="@+id/ScSa"
+                style="@style/cardScoreViewStyle" />
+            <Button
+                style="@style/buttonStyle3"
+                android:onClick="Shots1"/>
+
+            <TextView style="@style/textViewStyle2"
+                android:text="@string/shots"/>
+
+            <Button
+                style="@style/buttonStyle2"
+                android:onClick="Shotsb"/>
+            <TextView
+                android:id="@+id/ScSb"
+                style="@style/cardScoreViewStyle" />
+            <Button
+                style="@style/buttonStyle3"
+                android:onClick="Shots1b" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <Button
+                style="@style/buttonStyle2"
+                android:onClick="Corner"/>
+            <TextView
+                android:id="@+id/ScCa"
+                style="@style/cardScoreViewStyle" />
+            <Button
+                style="@style/buttonStyle3"
+                android:onClick="Corner1"/>
+
+            <TextView style="@style/textViewStyle2"
+                android:text="@string/corner"/>
+
+            <Button
+                style="@style/buttonStyle2"
+                android:onClick="Cornerb"/>
+            <TextView
+                android:id="@+id/ScCb"
+                style="@style/cardScoreViewStyle" />
+            <Button
+                style="@style/buttonStyle3"
+                android:onClick="Corner1b"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <Button
+                style="@style/buttonStyle2"
+                android:onClick="Yellowa" />
+
+            <TextView
+                android:id="@+id/Scya"
+                style="@style/cardScoreViewStyle"
+                android:layout_width="wrap_content" />
+            <Button
+                style="@style/buttonStyle3"
+                android:onClick="Yellowa1" />
+
+            <TextView style="@style/textViewStyle2"
+                android:text="@string/yellow_card"/>
+
+            <Button
+                style="@style/buttonStyle2"
+                android:onClick="Yellowb" />
+            <TextView
+                android:id="@+id/Scyb"
+                style="@style/cardScoreViewStyle" />
+            <Button
+                style="@style/buttonStyle3"
+                android:onClick="Yellowb1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <Button
+                style="@style/buttonStyle2"
+                android:onClick="Reda" />
+            <TextView
+                android:id="@+id/ScRa"
+                style="@style/cardScoreViewStyle" />
+            <Button
+                style="@style/buttonStyle3"
+                android:onClick="Reda1" />
+
+            <TextView style="@style/textViewStyle2"
+                android:text="@string/red"/>
+
+            <Button
+                style="@style/buttonStyle2"
+                android:onClick="Redb" />
+            <TextView
+                android:id="@+id/ScRb"
+                style="@style/cardScoreViewStyle" />
+            <Button
+                style="@style/buttonStyle3"
+                android:onClick="Redb1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:onClick="Resetall"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/reset"
+                android:background="@drawable/btn_corner"
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:id="@+id/footend"
+                android:layout_marginStart="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/end_match"
+                android:background="@drawable/btn_corner"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

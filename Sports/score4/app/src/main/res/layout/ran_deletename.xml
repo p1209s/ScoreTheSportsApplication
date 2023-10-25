@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvDelNameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/del_name_header"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/tvDelNamePresetLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvDelNameHeader"
+        android:layout_marginStart="5dp"
+        android:text="@string/current_preset"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvDelNameCurrentPreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDelNameHeader"
+        android:layout_toStartOf="@+id/tvDelNameTotalLabel"
+        android:layout_toEndOf="@+id/tvDelNamePresetLabel"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/none"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvDelNameTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDelNameHeader"
+        android:layout_toStartOf="@+id/tvDelNameTotalPlayers"
+        android:text="@string/total_players"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tvDelNameTotalPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tvDelNameHeader"
+        android:layout_marginEnd="5dp"
+        android:text="@string/_0"
+        android:textSize="16sp"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_delete_buttons"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tvDelNameCurrentPreset"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/layout_checkBoxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_delete_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_marginBottom="24sp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/bSelectAll"
+            android:text="@string/select_all"
+            style="@style/Random" />
+
+        <View
+            android:layout_width="7dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/bDelete"
+            android:text="@string/delete"
+            style="@style/Random"/>
+    </LinearLayout>
+
+</RelativeLayout>

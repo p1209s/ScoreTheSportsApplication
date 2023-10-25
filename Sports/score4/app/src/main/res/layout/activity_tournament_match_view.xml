@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/overallLayoutMatch"
+        tools:ignore="UselessParent">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/matchText"
+            android:id="@+id/matchTextView"
+            android:layout_gravity="center_horizontal"
+            android:textSize="28sp"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="#E48700"
+            tools:ignore="SmallSp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_margin="5dp"
+                tools:ignore="InefficientWeight,NestedWeights">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="NestedWeights"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/argentina"
+                        android:id="@+id/teamName1TextView"
+                        android:textSize="28sp"
+                        android:layout_weight="1"
+                        android:gravity="center|center_horizontal"
+                        tools:ignore="NestedWeights" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vsText"
+                        android:id="@+id/versusTextView"
+                        android:textSize="28sp"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical|center_horizontal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/colombia"
+                        android:id="@+id/teamName2TextView"
+                        android:layout_weight="1"
+                        android:textSize="28sp"
+                        android:gravity="center|center_horizontal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/team1ScoreEditText"
+                        android:layout_gravity="center_horizontal"
+                        android:enabled="true"
+                        android:textIsSelectable="false"
+                        android:textSize="40sp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:clickable="false"
+                        android:inputType="number"
+                        android:hint="@string/_0"
+                        style="@style/EditTextHoloColors"
+                        tools:ignore="Autofill" />
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.3" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.3">
+
+                        <Space
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3"
+                            tools:ignore="NestedWeights" />
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="2sp"
+                            android:background="#cc040404"
+                            android:id="@+id/dashLayout"
+                            tools:ignore="SmallSp" />
+
+                        <Space
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="3" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.3" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:id="@+id/team2ScoreEditTExt"
+                        android:layout_gravity="center_horizontal"
+                        android:enabled="true"
+                        android:gravity="center"
+                        android:textSize="40sp"
+                        android:layout_weight="1"
+                        android:textIsSelectable="false"
+                        android:clickable="false"
+                        android:inputType="number"
+                        android:elegantTextHeight="false"
+                        android:hint="@string/_0"
+                        style="@style/EditTextHoloColors"
+                        tools:ignore="Autofill" />
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/write_your_score"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:text="@string/saveText"
+            android:id="@+id/saveScoreButton"
+            android:onClick="saveOnClickInMatchView"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            style="@style/Random1"/>
+    </LinearLayout>
+</RelativeLayout>

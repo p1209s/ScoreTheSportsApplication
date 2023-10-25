@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_gravity="center_vertical"
+                android:background="#FFFFFF"
+                android:longClickable="false"
+                android:src="@drawable/sports"
+                tools:ignore="ContentDescription,NestedWeights" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+
+            <Button
+                android:id="@+id/newTournamentButton"
+                style="@style/Random1"
+                android:nestedScrollingEnabled="false"
+                android:onClick="newTournamentOnClick"
+                android:text="@string/newTournamentText"/>
+
+            <Button
+                android:id="@+id/loadTournamentButton"
+                style="@style/Random1"
+                android:layout_marginTop="10dp"
+                android:onClick="loadTournamentOnClick"
+                android:text="@string/loadTournamentText" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

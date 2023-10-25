@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	 <item
+        android:id="@+id/newPreset"
+        android:title="New"/>
+    <item
+        android:id="@+id/loadPreset"
+        android:title="Load/View Preset"/>
+    <item
+        android:id="@+id/savePresetAs"
+        android:title="Save Preset As..."/>
+    <item
+        android:id="@+id/savePreset"
+        android:title="Save Preset"/>
+    <item
+        android:id="@+id/deletePreset"
+        android:title="Delete Preset"/>
+
+</menu>

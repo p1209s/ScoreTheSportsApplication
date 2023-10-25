@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sports1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        tools:ignore="UselessParent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/team_a"
+                style="@style/textViewStyle"
+                android:hint="@string/team_a" />
+
+            <TextView
+                style="@style/textViewStyle"
+                android:padding="4dp"
+                android:text="@string/vs"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/team_b"
+                style="@style/textViewStyle"
+                android:hint="@string/team_b" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <TextView
+                style="@style/textViewStyle1"
+                android:text="@string/sets_won" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    style="@style/scoreViewStyle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/team_a_sets_won"
+                    style="@style/setsWonScoreView"
+                    android:background="#FFCD58"/>
+
+                <TextView
+                    android:id="@+id/team_b_sets_won"
+                    style="@style/setsWonScoreView"
+                    android:background="#B2FF66" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    style="@style/scoreViewStyle" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/attack_teamA"
+                style="@style/cardScoreViewStyle1" />
+
+            <TextView style="@style/textViewStyle2"
+                android:text="@string/attack"/>
+
+            <TextView
+                android:id="@+id/attack_teamB"
+                style="@style/cardScoreViewStyle1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/block_teamA"
+                style="@style/cardScoreViewStyle1" />
+
+            <TextView style="@style/textViewStyle2"
+                android:text="@string/block"/>
+
+            <TextView
+                android:id="@+id/block_teamB"
+                style="@style/cardScoreViewStyle1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+
+            <TextView
+                android:id="@+id/error_teamA"
+                style="@style/cardScoreViewStyle1" />
+
+            <TextView style="@style/textViewStyle2"
+                android:text="@string/error"/>
+
+            <TextView
+                android:id="@+id/error_teamB"
+                style="@style/cardScoreViewStyle1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/service_teamA"
+                style="@style/cardScoreViewStyle1" />
+
+            <TextView style="@style/textViewStyle2"
+                android:text="@string/service"/>
+
+            <TextView
+                android:id="@+id/service_teamB"
+                style="@style/cardScoreViewStyle1" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
